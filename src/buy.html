@@ -12,7 +12,7 @@
 
         gtag('js', new Date());
 
-        gtag('config', 'G-Y4Y7ZE2TCL');
+        gtag('config', 'G-Y4Y7ZE2TCL', {'debug_mode': true});
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,7 +42,9 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4Y7ZE2TCL"></script>
-<script>
+<script type="module">
+    import {getRandomInt} from "./js/main";
+
     document.addEventListener('DOMContentLoaded', function () {
         gtag('event', 'purchase', {
             "transaction_id": `${getRandomInt(1000)}`,
