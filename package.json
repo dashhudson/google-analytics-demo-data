@@ -1,0 +1,28 @@
+{
+  "name": "ga-reporting-demo",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel serve -p 8080 src/index.html --public-url / --dist-dir dist",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dutkiewicz/ga-reporting-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dutkiewicz/ga-reporting-demo/issues"
+  },
+  "homepage": "https://github.com/dutkiewicz/ga-reporting-demo#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}
