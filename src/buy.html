@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="scss/main.scss"/>
     <script type="module" scr="js/main.js"></script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4Y7ZE2TCL"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y4Y7ZE2TCL');
+</script>
 <body>
 <nav class="navbar bg-light">
     <div class="container">
@@ -21,7 +34,7 @@
     </div>
     <div class="row text-center">
         <div class="col-12">
-            <img src="https://picsum.photos/400" class="img-fluid" />
+            <img src="https://picsum.photos/400" class="img-fluid"/>
         </div>
     </div>
 </div>
@@ -30,15 +43,22 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4Y7ZE2TCL"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
+    document.addEventListener('DOMContentLoaded', function () {
+        gtag('event', 'purchase', {
+            "transaction_id": `${getRandomInt(1000)}`,
+            "value": `${getRandomInt(100)}`,
+            "currency": "CAD",
+            "items": [
+                {
+                    "id": "P12345",
+                    "name": "Dave's flipflops",
+                    "quantity": 1,
+                    "price": `${getRandomInt(1000)}`
+                }
+            ]
+        });
+    })
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-Y4Y7ZE2TCL');
 </script>
 </body>
 </html>
