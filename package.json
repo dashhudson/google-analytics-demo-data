@@ -6,7 +6,9 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel serve -p 8080 src/index.html --public-url / --dist-dir dist",
-    "build": "parcel build"
+    "build": "parcel build",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/dutkiewicz/ga-reporting-demo#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
+    "cypress": "^10.10.0",
     "parcel": "^2.7.0"
   },
   "dependencies": {
