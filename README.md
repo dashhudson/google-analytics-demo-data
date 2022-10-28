@@ -14,3 +14,6 @@ npm run serve
 
 ## Deployment
 Deployment is done to Netlify automatically on every push to `main` branch.
+
+## Faking traffic
+You can generate fake traffic and sales to the site by running `npm run cy:run`. It will launch Cypress test, which visits production site multiple times with fake `utm_term` IDs used for identifying seller ID.
