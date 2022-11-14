@@ -1,0 +1,12 @@
+name: fake-traffic-to-site
+on:
+  schedule:
+  - cron: "0 8,16,23 * * *"
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cypress run
+        uses: cypress-io/github-action@v4.2.0
