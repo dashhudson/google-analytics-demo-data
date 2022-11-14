@@ -1,7 +1,7 @@
 name: fake-traffic-to-site
 on:
   schedule:
-    - cron '0 8,16,23 * * *'
+  - cron: "0 8,16,23 * * *"
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
