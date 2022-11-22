@@ -23,6 +23,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "cypress": "^10.10.0",
+    "lodash": "^4.17.21",
     "parcel": "^2.7.0"
   },
   "dependencies": {
