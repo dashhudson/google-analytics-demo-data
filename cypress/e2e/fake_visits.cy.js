@@ -18,13 +18,19 @@ describe('Generate fake traffic', () => {
         ['tiktok.com', 'referral'],
         ['pinterest.com', 'referral'],
         ['youtube.com', 'referral'],
-        ['likeshopme', 'dash_hudson']
+        ['likeshopme', 'dash_hudson'],
+        ['tiktok', 'social'],
+        ['pinterest', 'social'],
+        ['facebook', 'social'],
+        ['instagram', 'social']
     ]
 
     const campaigns = [
         '',
         'Black Friday',
         'Summer Sale',
+        'summer_sale',
+        'summer sale',
         'Smmer sale',
         'Influencers refferal',
         'Nov2022_Holiday_V2',
