@@ -49,7 +49,7 @@ describe('Generate fake traffic', () => {
 
     })
     sourceMediums.forEach(([source, medium]) => {
-        const loopCount = random(0, 10)
+        const loopCount = random(0, 2)
 
         for (let i = 1; i < loopCount; i++) {
             it(`fakes ${i} out of ${loopCount} sales with utm_source=${source} and utm_medium=${medium}`, () => {
@@ -61,7 +61,7 @@ describe('Generate fake traffic', () => {
     })
     sourceMediums.forEach(([source, medium]) => {
         campaigns.forEach((campaign) => {
-            const loopCount = random(0, 10)
+            const loopCount = random(0, 2)
 
             for (let i = 1; i < loopCount; i++) {
                 it(`fakes ${i} out of ${loopCount} page views with utm_source=${source}, utm_medium=${medium}, utm_campaign=${campaign}`, () => {
