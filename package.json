@@ -1,7 +1,7 @@
 {
   "name": "ga-reporting-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "A fake website used for generating Google Analytics demo data",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dutkiewicz/ga-reporting-demo.git"
+    "url": "git@github.com:dashhudson/google-analytics-demo-data.git"
   },
-  "author": "",
+  "author": "David Dutkiewicz <dawid@dashhudson.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dutkiewicz/ga-reporting-demo/issues"
+    "url": "https://github.com/dashhudson/google-analytics-demo-data/issues"
   },
-  "homepage": "https://github.com/dutkiewicz/ga-reporting-demo#readme",
+  "homepage": "https://github.com/dashhudson/google-analytics-demo-data#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "cypress": "^10.10.0",
